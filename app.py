@@ -29,7 +29,7 @@ def hello():
 
 @app.route('/read from database')
 def read():
-    return 'I read!'
+#     return 'I read!'
     cursor.execute("SELECT * FROM employees")
     row = cursor.fetchone()
     result = []
